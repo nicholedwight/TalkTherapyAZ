@@ -1,3 +1,135 @@
+.logo {
+  max-width: 200px;
+}
+
+.main-menu {
+  position: absolute;
+  bottom: 1.5em;
+  left: .5em;
+  z-index: 10;
+}
+
+.main-menu ul {
+  list-style-type: none;
+}
+
+.main-menu ul li {
+  margin: .5em;
+}
+
+ul li a {
+  font-size: 1.5em;
+  color: #FFF;
+  text-transform: uppercase;
+}
+
+.main-menu ul li a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  background: linear-gradient(90deg,#c94435,#e8a13e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
+.secondary-menu {
+  background: linear-gradient(90deg,#c94435,#e8a13e);
+  height: 50px;
+  margin-top: 0;
+  padding: .6em 0 .5em 0;
+  margin: 0 6em;
+  border-bottom-left-radius: 150px;
+  border-bottom-right-radius: 150px;
+}
+
+.secondary-menu ul {
+  list-style-type: none;
+  text-align: center;
+  padding-left: 0;
+  margin: 0;
+}
+
+.secondary-menu ul li {
+  display: inline-block;
+  margin: 0 .5em;
+}
+
+.secondary-menu ul li a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: #393232;
+  padding: .5em;
+}
+
+
+@media screen and (max-width: 780px) {
+  .logo {
+    max-width: 100px;
+  }
+
+  .main-menu {
+    position: absolute;
+    bottom: 1em;
+    left: .5em;
+  }
+  
+  .main-menu ul {
+    list-style-type: none;
+  }
+}
+
+html {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  min-height: 100%;
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.landing-background-container {
+  background: url(./media/az-welcomesign.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  display: block;
+  position: fixed;
+}
+
+.about-background-container {
+  background: url(./media/family.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  display: block;
+  position: fixed;
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  background: rgba(0,0,0,0.5);
+}
+
+a {
+  text-decoration: none;
+}
+
 /* Screen reader only */
 .sr-only {
     position: absolute;
@@ -10,110 +142,9 @@
     border: 0;
   }
   
-  /* Button styling */
-  .menu-toggle {
-    display: inline-block;
-    padding: .75em 15px;
-    line-height: 1em;
-    font-size: 1em;
-    color: #333;
-  }
-  
-  .menu-toggle:hover,
-  .menu-toggle:focus {
-    color: #c00;
-  }
-  
-  /*
-   Default styles + Mobile first
-   Offscreen menu style
-  */
-  .main-menu {
-    position: absolute;
-    display: none;
-    left: -200px;
-    top: 0;
-    height: 100%;
-    overflow-y: scroll;
-    overflow-x: visible;
-    transition: left 0.3s ease,
-          box-shadow 0.3s ease;
-    z-index: 999;
-  }
-  
-  .main-menu ul {
-    list-style: none;
-    margin: 0;
-    padding: 2.5em 0 0;
-    /* Hide shadow w/ -8px while 'closed' */
-    -webkit-box-shadow: -8px 0 8px rgba(0,0,0,.5);
-       -moz-box-shadow: -8px 0 8px rgba(0,0,0,.5);
-            box-shadow: -8px 0 8px rgba(0,0,0,.5);
-    min-height: 100%;
-    width: 200px;
-    background: #1a1a1a;
-  }
-  
-  .main-menu a {
-    display: block;
-    padding: .75em 15px;
-    line-height: 1em;
-    font-size: 1em;
-    color: #fff;
-    text-decoration: none;
-    border-bottom: 1px solid #383838;
-  }
-  
-  .main-menu li:first-child a {
-    border-top: 1px solid #383838;
-  }
-  
-  .main-menu a:hover,
-  .main-menu a:focus {
-    background: #333;
-    text-decoration: underline;
-  }
-  
-  .main-menu .menu-close {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  
-  
-  /*
-   More to come here...
-  */
-  
-  
-  /*
-   Demo purposes only
-  */
   *,
   *:before,
   *:after {
     box-sizing: border-box;
   }
   
-  header {
-    padding: 20px;
-    display: flex;
-    align-items: baseline;
-  }
-  
-  article {
-    padding: 30px;
-    width: 55em;
-    font-size: 16px;
-    line-height: 1.5em;
-  }
-  
-  article h2 {
-    font-weight: 500;
-    font-size: 28px;
-  }
-  
-  .logo {
-    margin: 0 30px 0 10px;
-    font-size: 1.5em;
-  }
