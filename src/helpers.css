@@ -45,6 +45,10 @@
     clear: both;
 }
 
+.margin-left--single {
+    margin-left: 2em;
+}
+
 .margin-right--single {
     margin-right: 2em;
 }
@@ -59,6 +63,10 @@
 
 .margin-bottom--double {
     margin-bottom: 4em;
+}
+
+.margin-vertical--single {
+    margin: 2em 0;
 }
 
 .orange {
@@ -102,6 +110,10 @@
     margin-top: .25em;
 }
 
+.icon {
+    max-width: 50px;
+}
+
 .toggle {
     position: absolute;
     top: 1.5em;
@@ -139,6 +151,16 @@
     justify-content: space-evenly;
 }
 
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.flex-row--even {
+    justify-content: space-evenly;
+}
+
 .flex-row-3 {
     display: flex;
     justify-content: space-between;
@@ -159,6 +181,10 @@
     max-width: 300px;
     align-self: baseline;
     position: relative;
+}
+
+.flex-item--large {
+    max-width: 400px;
 }
 
 .flex-item.card {

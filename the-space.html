@@ -7,7 +7,10 @@
         <link rel="stylesheet" href="src/helpers.css"/>
         <link rel="stylesheet" href="src/light.css"/>
         <!-- <link rel="stylesheet" href="src/light.css"/> -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
         <link rel="shortcut icon" type="image/jpg" href="./src/media/favicon-16x16.png"/>
+        <script src="map.js"></script>
     </head>
     <body>
       <header>
@@ -15,9 +18,9 @@
           <a href="index.html"
               class="logo"
               aria-label="Talk Therapy AZ - Go to homepage">
-              <img src="./src/media/logo.png" alt="Talk Therapy AZ Logo" class="logo" />
+              <img src="./src/media/logo-white.png" alt="Talk Therapy AZ Logo" class="logo" />
           </a>
-          <button class="button--primary margin-right--single">CONTACT</button>
+          <a href="contact.html"><button class="button--primary margin-right--single">CONTACT</button></a>
         </div>
 
         <nav id="secondary-menu" class="secondary-menu" aria-label="Main menu">
@@ -32,35 +35,63 @@
           </ul>
         </nav>
       </header>
-      <div class="space-background-container">
+      <!-- <div class="space-background-container">
         <div class="overlay"></div>
-      </div>
+      </div> -->
       <div class="content-wrapper">
-        <div class="article--space">
-            <article>
-                <h1>The Space</h1>
-                <p>
-                    Talk Therapy AZ is in the Off16th Executive Suites at 7600 N 15th Street, Suite 150, Phoenix, AZ 85020. Major cross streets are N 16th Street and E Morten Ave. 
-                </p>
-                <p>
-                    Park by the East Lobby in any uncovered spot. Upon entry to Suite 150 you may ask the receptionist to call me or proceed to Office 39 which is off the first hallway to the left behind the large table & chairs in the break area. Note: if you hit the restrooms, you went too far…
-                </p>
-                <p>
-                    The building and suite are ADA accessible. If you have specific questions or concerns regarding access, space, or seating requirements, please discuss with me prior to your intake session so I can confirm an accommodation can be made or explore alternatives with you
-                </p>
+        <div class="content">
+            <h1>The Space</h1>
+            <hr />
+            <div class="flex-row flex-row--even margin-top--single">
+                <div class="flex-item">
+                    <p>
+                        Talk Therapy AZ is in the Off16th Executive Suites at 7600 N 15th Street, Suite 150, Phoenix, AZ 85020. Major cross streets are N 16th Street and E Morten Ave. 
+                    </p>
+                    <p>
+                        Park by the East Lobby in any uncovered spot. Upon entry to Suite 150 you may ask the receptionist to call me or proceed to Office 39 which is off the first hallway to the left behind the large table & chairs in the break area. Note: if you hit the restrooms, you went too far…
+                    </p>
+                    <p>
+                        The building and suite are ADA accessible. If you have specific questions or concerns regarding access, space, or seating requirements, please discuss with me prior to your intake session so I can confirm an accommodation can be made or explore alternatives with you
+                    </p>
+                </div>
+                <img src="./src/media/the-space.jpg" alt="Photo of the outside of my office building" class="image--space" />
+            </div>
+            
 
-                <h2>Nearby Amenities...because life happens early & often:</h2>
-                <p>
-                    <strong>Coffee</strong> - Dutch Bros - 1201 E Glendale Ave, Phoenix, AZ 85020
-                </p>
-                <p>
-                    <strong>Food</strong> – Luci’s at the Orchard - 7100 N. 12th Street, Building Two, Phoenix, AZ 85020
-                </p>
-                <p>
-                    <strong>Groceries</strong> – Safeway - 810 E Glendale Ave, Phoenix, AZ 85020
-                </p>
-                <h3 class="align--center be-well">Be well.</h3>
-            </article>
+            <!-- <div id="map" class="margin-vertical--single"></div> -->
+            <iframe src="https://snazzymaps.com/embed/317299" width="100%" height="350px" style="border:none;" class="margin-vertical--single"></iframe>
+
+            <h2>Nearby Amenities...because life happens early & often</h2>
+            <div class="flex-row">
+                <div class="flex-item align--center">
+                    <img src="./src/media/coffee.png" alt="Coffee icon" class="icon" />
+                    <h3>Coffee</h3>
+                    <p>
+                        <strong>Dutch Bros</strong> - 1201 E Glendale Ave, Phoenix, AZ 85020
+                    </p>
+                </div>
+
+                <div class="flex-item align--center">
+                    <img src="./src/media/food.png" alt="Food icon" class="icon" />
+                    <h3>Food</h3>
+                    <p>
+                        <strong>Luci’s at the Orchard</strong> – 7100 N. 12th Street, Building Two, Phoenix, AZ 85020
+                    </p>
+                </div>
+
+                <div class="flex-item align--center">
+                    <img src="./src/media/groceries.png" alt="Groceries icon" class="icon" />
+                    <h3>Groceries</h3>
+                    <p>
+                        <strong>Safeway</strong> – 810 E Glendale Ave, Phoenix, AZ 85020
+                    </p>
+                </div>
+            </div>
+
+            
+            
+            
+            <h3 class="align--center be-well">Be well.</h3>
         </div>
       </div>
       <footer>
@@ -72,7 +103,7 @@
             <a href="privacy.html">Privacy</a>
             <a href="the-space.html">The Space</a>
             <a href="fees.html">Pricing + Policies</a>
-            <a href="#">Contact</a>
+            <a href="#"><a href="contact.html">CONTACT</a></a>
         </div>
         <hr />
         <div class="footer--contact">
@@ -84,5 +115,10 @@
             <span>Built with ♡ by <a href="https://nichole.is">Nichole Dwight</a></span>
         </div>
       </footer>
+
+      <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyClxQWaWwKzcsFCZT8894_64JpvZSW5oeg&callback=initMap&libraries=&v=weekly"
+        async
+        ></script>
     </body>
 </html>

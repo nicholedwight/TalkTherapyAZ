@@ -19,7 +19,7 @@ text-transform: uppercase;
     height: 50px;
     margin-top: 0;
     padding: .6em 0 .5em 0;
-    margin: 0 6em;
+    margin: 0 5em;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     position: relative;
@@ -36,6 +36,9 @@ text-transform: uppercase;
 .secondary-menu ul li {
     display: inline-block;
     margin: 0 .5em;
+    letter-spacing: 2.996px;
+    line-height: 24px;
+    font-size: .75em;
 }
 
 .secondary-menu ul li a:hover {
@@ -52,6 +55,10 @@ text-transform: uppercase;
     -webkit-box-shadow: 0 10px 6px -6px #777;
     -moz-box-shadow: 0 10px 6px -6px #777;
     box-shadow: 0 10px 6px -6px #777;
+}
+
+.header-container--index {
+    background-color: #393232;
 }
 
 /* .header-container:before, .header-container:after{

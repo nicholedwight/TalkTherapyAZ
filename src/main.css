@@ -2,6 +2,10 @@
   max-width: 200px;
 }
 
+.payment-logo {
+  max-width: 100px;
+}
+
 .main-menu {
   position: absolute;
   bottom: 1.5em;
@@ -19,14 +23,10 @@
 
 
 
-.article--about,
-.article--space {
+.article--about {
   color: #FFF;
 }
 
-.article--space {
-  height: 60vh;
-}
 
 .about-right {
   width: 40%;
@@ -38,6 +38,14 @@
   float: left;
   width: 650px;
   margin: 0 auto;
+}
+
+.rates-list {
+  padding-left: .75em;
+}
+
+.rates-list li {
+  padding: .5em 0;
 }
 
 @media screen and (max-width: 780px) {
@@ -59,6 +67,8 @@
 html {
   height: 100%;
   margin: 0;
+  font-family: 'Open Sans', arial, sans-serif;
+  font-weight: 400;
 }
 
 .landing-background-container {
@@ -109,6 +119,12 @@ html {
   height: 100%;
   width: 100%;
   background: rgba(0,0,0,0.5);
+}
+
+.image--accident,
+.image--space {
+  max-width: 300px;
+  align-self: flex-end;
 }
 
 .be-well {
@@ -194,19 +210,25 @@ footer {
 
 /* Screen reader only */
 .sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0,0,0,0);
-    border: 0;
-  }
-  
-  *,
-  *:before,
-  *:after {
-    box-sizing: border-box;
-  }
-  
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+#map {
+  height: 400px;
+  /* The height is 400 pixels */
+  width: 100%;
+  /* The width is the width of the web page */
+}

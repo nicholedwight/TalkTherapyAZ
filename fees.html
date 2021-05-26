@@ -7,6 +7,8 @@
         <link rel="stylesheet" href="src/helpers.css"/>
         <link rel="stylesheet" href="src/light.css"/>
         <!-- <link rel="stylesheet" href="src/light.css"/> -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
         <link rel="shortcut icon" type="image/jpg" href="./src/media/favicon-16x16.png"/>
     </head>
     <body>
@@ -15,9 +17,9 @@
           <a href="index.html"
               class="logo"
               aria-label="Talk Therapy AZ - Go to homepage">
-              <img src="./src/media/logo.png" alt="Talk Therapy AZ Logo" class="logo" />
+              <img src="./src/media/logo-white.png" alt="Talk Therapy AZ Logo" class="logo" />
           </a>
-          <button class="button--primary margin-right--single">CONTACT</button>
+          <a href="contact.html"><button class="button--primary margin-right--single">CONTACT</button></a>
         </div>
 
         <nav id="secondary-menu" class="secondary-menu" aria-label="Main menu">
@@ -33,48 +35,63 @@
         </nav>
       </header>
       <div class="content-wrapper">
-        <div class="flex-container centered">
-            <article>
-                <h1>Policies and Fees</h1>
-                <ul>
-                    <li>Intake Evaluation / Assessment (90 minutes): $60 - 120</li>
-                    <li>Therapy Session (50 minutes): $50 - 90 </li>
-                    <li>Personal Injury Evaluation / Assessment (90-120 minutes): call </li>
-                    <li>Personal Injury Therapy Session (50 minutes): call</li>
-                    <li>Sliding Scale: call for rate & availability. </li>
-                    <li>Missed Session Fee (not cancelled one business day prior) = $65 </li>
-                </ul>
-                <h2>Payment</h2>
-                <img src="./src/media/visa-logo.png" alt="Visa and Mastercard Logos"class="payment-logo" />
-                <img src="./src/media/discover-logo.png" alt="Discover card Logo"class="payment-logo" />
-                <img src="./src/media/amex.png" alt="American Express Card Logo"class="payment-logo" />
-                <p>
-                    I accept cash, check, Visa, MasterCard, Discover, and American Express. Additionally, I take Health Saving Account (HSA) and Flex Saving Account (FSA) benefit cards. Cards will be added to the client portal and I will charge the provided card at the end of the session. There are few exceptions to the missed session fee. As a small business owner, I have limited hours and incur a loss of expected revenue absent of ample opportunity to schedule  someone else for that time.  
-                </p>
-                <h2>Out-of-Network Benefits</h2>
-                <p>
-                    I am out of network with all insurances, which means I do not directly bill the insurance; however, you may be eligible for partial reimbursement through your insurance company with a few additional steps. Counseling services may be eligible for reimbursement through out-of-network benefits, medical spending, or health care savings accounts. Health insurance plans and benefits vary. If you are interested in using your health insurance, please call your insurance provider to inquire about reimbursement for out-of-network counseling services.
-                </p>
-                <p>
-                    If you would like to investigate the possibility of reimbursement for out-of-network coverage, please check your policy carefully and ask the following questions of your provider:
-                </p>
-                <ul>
-                    <li>I would like to see a therapist who is out-of-network, how can I obtain reimbursement for therapy with an out-of-network provider?</li>
-                    <li>How much does my plan cover for an out-of-network mental health provider?</li>
-                    <li>What is my deductible, and has it been met?</li>
-                    <li>How much does my plan cover for an out-of-network mental health provider?</li>
-                    <li>What is the coverage amount per therapy session?</li>
-                </ul>
-                <h2>Other Questions</h2>
-                <p><strong>Q:</strong> How do I know what I will be charged?</p>
-                <p><strong>A:</strong> Prior to services you will be provided with the session fee</p>
-                <p><strong>Q:</strong> Why does the intake cost more? </p>
-                <p><strong>A:</strong> Intake requires screening, assessment, and the use of evidence-based tools which can take longer or have ancillary costs to the practice for use</p>
-                <p><strong>Q:</strong> Why are the fees different for personal injury referrals or clients?</p>
-                <p><strong>A:</strong> Most clients who are seen by the practice are attorney represented which means fees are due for services at the time the case is settled or closed. Personal Injury clients frequently require additional communication between the practice and attorney of record or other medical providers for coordination of care which occurs outside of the time allocated for assessment or therapy services. </p>
+        <div class="content">
+            <h1>Pricing + Policies</h1>
+            <hr />
+            <div class="flex-row flex-row--even">
+                <div class="flex-item flex-item--large">
+                    <h2>Rates</h2>
+                    <ul class="rates-list">
+                        <li><strong>$60 - 120</strong> - Intake Evaluation / Assessment (90 minutes) </li>
+                        <li><strong>$50 - 90</strong> - Therapy Session (50 minutes) </li>
+                        <li><strong>Call</strong> - Personal Injury Evaluation / Assessment (90-120 minutes)</li>
+                        <li><strong>Call</strong> - Personal Injury Therapy Session (50 minutes)</li>
+                        <li><strong>Call</strong> - Sliding Scale: call for rate & availability. </li>
+                        <li><strong>$65</strong> - Missed Session Fee (not cancelled one business day prior)</li>
+                    </ul>
+                </div>
+    
+                <div class="flex-item flex-item--large">
+                    <h2>Payment</h2>
+                    <div class="flex-row flex-row--even">
+                        <img src="./src/media/visa-logo.png" alt="Visa and Mastercard Logos"class="payment-logo" />
+                        <img src="./src/media/discover-logo.png" alt="Discover card Logo"class="payment-logo" />
+                        <img src="./src/media/amex.png" alt="American Express Card Logo"class="payment-logo" />
+                    </div>
+                    <p>
+                        I accept cash, check, Visa, MasterCard, Discover, and American Express. Additionally, I take Health Saving Account (HSA) and Flex Saving Account (FSA) benefit cards. Cards will be added to the client portal and I will charge the provided card at the end of the session. There are few exceptions to the missed session fee. As a small business owner, I have limited hours and incur a loss of expected revenue absent of ample opportunity to schedule  someone else for that time.  
+                    </p>
+                </div>
+            </div>
+            
+            <h2 class="margin-top--single">Out-of-Network Benefits</h2>
+            <hr />
+            <p>
+                I am out of network with all insurances, which means I do not directly bill the insurance; however, you may be eligible for partial reimbursement through your insurance company with a few additional steps. Counseling services may be eligible for reimbursement through out-of-network benefits, medical spending, or health care savings accounts. Health insurance plans and benefits vary. If you are interested in using your health insurance, please call your insurance provider to inquire about reimbursement for out-of-network counseling services.
+            </p>
+            <p>
+                If you would like to investigate the possibility of reimbursement for out-of-network coverage, please check your policy carefully and ask the following questions of your provider:
+            </p>
+            <ul>
+                <li>I would like to see a therapist who is out-of-network, how can I obtain reimbursement for therapy with an out-of-network provider?</li>
+                <li>How much does my plan cover for an out-of-network mental health provider?</li>
+                <li>What is my deductible, and has it been met?</li>
+                <li>How much does my plan cover for an out-of-network mental health provider?</li>
+                <li>What is the coverage amount per therapy session?</li>
+            </ul>
 
-                <h3 class="align--center be-well">Be well.</h3>
-            </article>
+            <h2 class="margin-top--double">FAQs</h2>
+            <hr />
+            <p class="margin-top--single"><strong>How do I know what I will be charged?</strong></p>
+            <p>Prior to services you will be provided with the session fee</p>
+
+            <p class="margin-top--single"><strong>Why does the intake cost more?</strong></p>
+            <p>Intake requires screening, assessment, and the use of evidence-based tools which can take longer or have ancillary costs to the practice for use</p>
+
+            <p class="margin-top--single"><strong>Why are the fees different for personal injury referrals or clients?</strong></p>
+            <p>Most clients who are seen by the practice are attorney represented which means fees are due for services at the time the case is settled or closed. Personal Injury clients frequently require additional communication between the practice and attorney of record or other medical providers for coordination of care which occurs outside of the time allocated for assessment or therapy services. </p>
+
+            <h3 class="align--center be-well">Be well.</h3>
         </div>
       </div>
       <footer>
@@ -86,7 +103,7 @@
             <a href="privacy.html">Privacy</a>
             <a href="the-space.html">The Space</a>
             <a href="fees.html">Pricing + Policies</a>
-            <a href="#">Contact</a>
+            <a href="#"><a href="contact.html">CONTACT</a></a>
         </div>
         <hr />
         <div class="footer--contact">
