@@ -1,0 +1,93 @@
+ul li a {
+font-size: 1.25em;
+color: #FFF;
+text-transform: uppercase;
+}
+
+.main-menu ul li a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    background: linear-gradient(90deg,#c94435,#e8a13e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+}
+
+.secondary-menu {
+    background: linear-gradient(90deg,#ff7c6d,#ffcf8c);
+    height: 50px;
+    margin-top: 0;
+    padding: .6em 0 .5em 0;
+    margin: 0 6em;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.secondary-menu ul {
+    list-style-type: none;
+    text-align: center;
+    padding-left: 0;
+    margin: 0;
+}
+
+.secondary-menu ul li {
+    display: inline-block;
+    margin: 0 .5em;
+}
+
+.secondary-menu ul li a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f4f0ed;
+    padding: .5em;
+    position: relative;
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+    -moz-box-shadow: 0 10px 6px -6px #777;
+    box-shadow: 0 10px 6px -6px #777;
+}
+
+/* .header-container:before, .header-container:after{
+    z-index: -1;
+    position: absolute;
+    content: "";
+    bottom: 15px;
+    left: 10px;
+    width: 50%;
+    top: 80%;
+    max-width:300px;
+    background: #777;
+    -webkit-box-shadow: 0 15px 10px #777;
+    -moz-box-shadow: 0 15px 10px #777;
+    box-shadow: 0 15px 10px #777;
+    -webkit-transform: rotate(-3deg);
+    -moz-transform: rotate(-3deg);
+    -o-transform: rotate(-3deg);
+    -ms-transform: rotate(-3deg);
+    transform: rotate(-3deg);
+}
+
+.header-container:after{
+    -webkit-transform: rotate(3deg);
+    -moz-transform: rotate(3deg);
+    -o-transform: rotate(3deg);
+    -ms-transform: rotate(3deg);
+    transform: rotate(3deg);
+    right: 10px;
+    left: auto;
+} */
+
+body {
+    min-height: 100%;
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: #f4f0ed;
+  }

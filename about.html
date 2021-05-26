@@ -5,6 +5,8 @@
         <title>Talk Therapy AZ</title>
         <link rel="stylesheet" href="src/main.css"/>
         <link rel="stylesheet" href="src/helpers.css"/>
+        <link rel="stylesheet" href="src/light.css"/>
+        <!-- <link rel="stylesheet" href="src/light.css"/> -->
         <link rel="shortcut icon" type="image/jpg" href="./src/media/favicon-16x16.png"/>
     </head>
     <body>
@@ -21,18 +23,21 @@
         <nav id="secondary-menu" class="secondary-menu" aria-label="Main menu">
           <ul>
             <li><a href="about.html" class="active">About Me</a></li>
-            <li><a href="#">Services</a></li>
+            <li><a href="focus-privacy.html">Focus + Privacy</a></li>
             <li><a href="personal-injury.html">Personal Injury</a></li>
             <li><a href="privacy.html">Privacy</a></li>
             <li><a href="the-space.html">The Space</a></li>
-            <li><a href="fees.html">Fees</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="fees.html">Pricing + Policies </a></li>
+            
           </ul>
         </nav>
       </header>
+      <div class="about-background-container">
+        <div class="overlay"></div>
+      </div>
       <div class="content-wrapper">
-        <div class="flex-container">
-            <article>
+        <div class="article--about">
+            <span class="about-right">
                 <h1>About Robert</h1>
                 <p>
                     Hi, I am Robert Preston, MA, NCC a Licensed Associate Counselor (LAC) in Arizona, often also referred to as a Mental Health Therapist. I own and operate Talk Therapy AZ PLLC. 
@@ -43,7 +48,6 @@
                 <p>
                     You are the author of your story. I hope during our time together you feel brave, respected, and welcome to explore all your life experiences. 
                 </p>
-
                 <h2>What makes me legit?</h2>
                 <p>
                     Education has been a lifelong passion. I earned a bachelor's degree at Johnson & Wales University, an MBA master’s degree at Western International University, a master’s degree in Professional Mental Health Counseling with a concentration in addictions at Lewis and Clark College a Council for Accreditation of Counseling and Related Educational Programs (CACREP) program in Portland, Oregon and recently was accepted into the Psy.D. program for Clinical Psychology at Northern Arizona University – Phoenix Campus (Fall, 2021). 
@@ -52,6 +56,8 @@
                     I am a Licensed Associate Counselor (LAC) through the Arizona Board of Behavioral Supervisors. Additionally, I am certified through the Mental Health and Addiction Board of Oregon (MHACBO) as a Certified Drug and Alcohol Counselor (CADC-I). Lastly, in January of 2021 I received certification from the National Board of Certified Counselors as a National Certified Counselor which requires passing a competency exam + verification of academic and internship experience. 
                 </p>
 
+            </span>
+            <span class="about-left">
                 <h2>What is therapy like with me?</h2>
                 <p>
                     One part understanding, one part education, and one part action (that’s your part) with a healthy dose of humor and banter on top! The good, the bad, the ugly (or challenging) …bring it. Life is hard and a great laugh is often the reset of medicine we need. 
@@ -65,16 +71,30 @@
                 <p>
                     Picture: Robert’s Family 
                 </p>
-                <h3 class="align--center">Be well.</h3>
-            </article>
-            <figure class="figure--family">
-                <img src="./src/media/family.jpg" alt="My Family photo" style="max-width: 450px"/>
-                <figcaption>My family</figcaption>
-            </figure>
+            </span>
+            <h3 class="align--center clear be-well">Be well.</h3>
         </div>
       </div>
       <footer>
-
+        <img src="./src/media/white-logo-cropped.png" alt="Talk Therapy AZ Logo" class="footer--logo" />
+        <div class="footer--nav">
+            <a href="about.html">About Me</a>
+            <a href="focus-privacy.html">Focus + Privacy</a>
+            <a href="personal-injury.html">Personal Injury</a>
+            <a href="privacy.html">Privacy</a>
+            <a href="the-space.html">The Space</a>
+            <a href="fees.html">Pricing + Policies</a>
+            <a href="#">Contact</a>
+        </div>
+        <hr />
+        <div class="footer--contact">
+            <span class="phonenumber">Phone: 480.702.1650</span>
+            <span class="address">7600 N 15th St. Suite 150, Phoenix, AZ 85020</span>
+        </div>
+        <div class="copyright">
+            <span>©2021 Talk Therapy AZ</span>
+            <span>Built with ♡ by <a href="https://nichole.is">Nichole Dwight</a></span>
+        </div>
       </footer>
     </body>
 </html>
