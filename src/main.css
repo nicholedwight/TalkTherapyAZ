@@ -1,5 +1,26 @@
-.logo {
+.logo img {
   max-width: 200px;
+}
+
+.logo img:last-child {
+  margin-left: .8px;
+  display: none;
+}
+
+.logo:hover img:last-child {
+  display: block;
+}
+
+.logo:hover {
+  padding-bottom: 5px;
+}
+
+.logo:hover img:first-child {
+  display: none;
+}
+
+.header-container--index .logo img:last-child {
+  display: block;
 }
 
 .payment-logo {
@@ -206,6 +227,12 @@ footer {
 
 .copyright a {
   color: #998c8c;
+}
+
+.copyright a:hover {
+  cursor: pointer;
+  color: #FFF;
+  border-bottom: 1px solid #FFF;
 }
 
 /* Screen reader only */

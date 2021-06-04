@@ -1,0 +1,81 @@
+{'resource': '/', 'path': '/', 'httpMethod': 'POST', 'headers': {'Accept': 'application/json, text/plain, * /*', 'Content-Type': 'application/json;charset=utf-8', 'Host': 'vwxm9vcvwa.execute-api.us-west-2.amazonaws.com', 'User-Agent': 'axios/0.19.2', 'X-Amzn-Trace-Id': 'Root=1-60b81230-285bceb14ab98c452d8281c7', 'X-Forwarded-For': '54.146.3.227', 'X-Forwarded-Port': '443', 'X-Forwarded-Proto': 'https', 'x-newrelic-id': 'VgUOV19aDxABVFRaDgIHVA==', 'x-newrelic-transaction': 'PxQCBAdUCwAEB1ZQBFMPVkYdUFIOFQZOElddAw8LBwZQUgtSU1kDQEgUDlZQV11XBwBDPw=='}, 'multiValueHeaders': {'Accept': ['application/json, text/plain, */*'
+    ], 'Content-Type': ['application/json;charset=utf-8'
+    ], 'Host': ['vwxm9vcvwa.execute-api.us-west-2.amazonaws.com'
+    ], 'User-Agent': ['axios/0.19.2'
+    ], 'X-Amzn-Trace-Id': ['Root=1-60b81230-285bceb14ab98c452d8281c7'
+    ], 'X-Forwarded-For': ['54.146.3.227'
+    ], 'X-Forwarded-Port': ['443'
+    ], 'X-Forwarded-Proto': ['https'
+    ], 'x-newrelic-id': ['VgUOV19aDxABVFRaDgIHVA=='
+    ], 'x-newrelic-transaction': ['PxQCBAdUCwAEB1ZQBFMPVkYdUFIOFQZOElddAw8LBwZQUgtSU1kDQEgUDlZQV11XBwBDPw=='
+    ]
+}, 'queryStringParameters': None, 'multiValueQueryStringParameters': None, 'pathParameters': None, 'stageVariables': None, 'requestContext': {'resourceId': '6k9ca28aab', 'resourcePath': '/', 'httpMethod': 'POST', 'extendedRequestId': 'AUfHiEgqPHcFV_w=', 'requestTime': '02/Jun/2021: 23: 20: 16 +0000', 'path': '/Prod', 'accountId': '800271897437', 'protocol': 'HTTP/1.1', 'stage': 'Prod', 'domainPrefix': 'vwxm9vcvwa', 'requestTimeEpoch': 1622676016025, 'requestId': 'd56aaae5-fed9-422c-9b70-c65c706f5014', 'identity': {'cognitoIdentityPoolId': None, 'accountId': None, 'cognitoIdentityId': None, 'caller': None, 'sourceIp': '54.146.3.227', 'principalOrgId': None, 'accessKey': None, 'cognitoAuthenticationType': None, 'cognitoAuthenticationProvider': None, 'userArn': None, 'userAgent': 'axios/0.19.2', 'user': None
+    }, 'domainName': 'vwxm9vcvwa.execute-api.us-west-2.amazonaws.com', 'apiId': 'vwxm9vcvwa'
+}, 'body': '{
+    "formId": "60b808f2ddf4bd3ff3ab78a6",
+    "eventType": "newSubmission",
+    "submittedAt": "2021-06-02T23:20:01.466Z",
+    "completionTime": 17,
+    "number": 4,
+    "ip": "70.175.119.59",
+    "submissionId": "60b812214347910f9f2aff11",
+    "urlParams": {},
+    "calculationVariables": {
+        "Score": 0
+    },
+    "formName": "Get in touch",
+    "fields": [
+        {
+            "name": "Get in touch",
+            "_id": "5ef9c3e1aec7250b7d924ea8",
+            "type": "title",
+            "visible": true,
+            "section": "root",
+            "position": 0,
+            "childrens": [],
+            "value": "Get in touch"
+        },
+        {
+            "name": "What is your name?",
+            "_id": "5ef9c3e7aec7253fba924ea9",
+            "type": "shortText",
+            "visible": true,
+            "section": "root",
+            "position": 1,
+            "childrens": [],
+            "value": "Testing"
+        },
+        {
+            "name": "What is your email>",
+            "_id": "5ef9c3f3aec725bd6a924eaa",
+            "type": "shortText",
+            "visible": true,
+            "section": "root",
+            "position": 2,
+            "childrens": [],
+            "value": "test@talktherapyaz.com"
+        },
+        {
+            "name": "What is your phone number?",
+            "_id": "5ef9c3fdaec7257d90924eab",
+            "type": "shortText",
+            "visible": true,
+            "section": "root",
+            "position": 3,
+            "childrens": [],
+            "value": "123-456-7890"
+        },
+        {
+            "name": "Message",
+            "_id": "5ef9c439aec725a691924eac",
+            "type": "shortText",
+            "visible": true,
+            "section": "root",
+            "position": 4,
+            "childrens": [],
+            "value": "Testing!"
+        }
+    ],
+    "sections": []
+}', 'isBase64Encoded': False
+}

@@ -49,8 +49,9 @@ text-transform: uppercase;
 .header-container {
     display: flex;
     justify-content: space-between;
-    background-color: #f4f0ed;
-    padding: .5em;
+    /* background-color: #f4f0ed; */
+    background-color: #FFF;
+    /* padding: .5em; */
     position: relative;
     -webkit-box-shadow: 0 10px 6px -6px #777;
     -moz-box-shadow: 0 10px 6px -6px #777;
@@ -59,6 +60,19 @@ text-transform: uppercase;
 
 .header-container--index {
     background-color: #393232;
+    padding: .5em;
+}
+
+.header-container--index .header-phone {
+    color: #FFF;
+}
+
+.header-phone {
+    font-size: 14px;
+    letter-spacing: .24em;
+    line-height: 2em;
+    text-align: center;
+    margin: 2em auto;
 }
 
 /* .header-container:before, .header-container:after{
