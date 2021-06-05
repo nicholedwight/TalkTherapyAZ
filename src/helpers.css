@@ -10,10 +10,25 @@
     transition: background-color 170ms ease-out, color 170ms ease-out;
 }
 
+.header-container--index .button--primary {
+    margin: .7em 1em .7em .4em;
+    margin-top: 1em;
+}
+
 .button--primary:hover {
     color: #fff;
     background-color: #e6b987;
     cursor: pointer;
+}
+
+.button--provider {
+    color: #c24737;
+    border: 2px solid #c24737;
+}
+
+.button--provider:hover {
+    color: #FFF;
+    background-color: #c24737;
 }
 
 .flex-container {

@@ -24,6 +24,7 @@
 }
 
 .payment-logo {
+  height: 50px;
   max-width: 100px;
 }
 
@@ -58,7 +59,20 @@
   clear: both;
   float: left;
   width: 650px;
+  max-width: 100%;
   margin: 0 auto;
+}
+
+.space-background-image {
+  background: url(./media/space-parallax.JPG) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  display: block;
+  position: fixed;
 }
 
 .rates-list {
